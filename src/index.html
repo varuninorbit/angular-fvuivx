@@ -1,0 +1,50 @@
+<html>
+<head>
+    
+    <title>Paper App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<span id="head-scripts">
+    <span id="vendor-scripts-head">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="//unpkg.com/angular@1.5/angular.js"></script>
+    <script src="//unpkg.com/@uirouter/angularjs@1.0.5/release/angular-ui-router.js"></script>
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </span>
+
+  <span id="visualizerscripts">
+    <link rel="stylesheet" href="ta/css/visualiser-styles-debug.css">
+    <script src="//unpkg.com/d3@3"></script>
+    <script src="//unpkg.com/@uirouter/visualizer@4.0.2"></script>
+  </span>
+</span>
+<style>
+  .primary-color:{
+    color: #007bff
+  }
+  .invisible-bar {
+    height: 5rem;
+    visibility: hidden;
+}
+
+fab-bottom-right{
+    position: fixed !important;
+    right: 15px; /* Add this and change value to set the margin you want */
+}
+</style>
+
+</head>
+
+<body ng-app="taApp" ng-class="{'debug-sref': debug.uisref, 'debug-view': debug.uiview}">
+ 
+    <my-app></my-app>
+    <div class="invisible-bar"><div>
+</body>
+</html>
